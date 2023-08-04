@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portafolio Aristeo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+<!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-dark">
+      <div class="container-fluid ">
+        <a class="navbar-brand btn-neon" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link  btn-neon" aria-current="page" href="./index.html">
+                <span id="span1"></span> <!--Este nav contiene los botones, la barra superior-->
+                <span id="span2"></span>
+                <span id="span3"></span>
+                <span id="span4"></span>
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-neon" href="./Proyects.html">
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+                <span id="span4"></span>
+                Proyects
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-neon" href="./Skills.html">
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+                <span id="span4"></span>
+                Skills
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn-neon" href="./Contact.html">
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+                <span id="span4"></span>
+                Contact
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!--Formulario-->
+
+<div class="col colForm">
+  <h1 style="text-align: center;">Cuéntame sobre ti</h1>
+  <div class="alert alert-danger fade show" style="display:none;" role="alert"
+      id="alertValidaciones">
+      <p id="alertValidacionesTexto"></p>
+  </div>
+
+  <form class="needs-validation" id="form">
+      <div class="mb-3">
+          <label for="nameInput" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nameInput" placeholder="Juan Pérez" value=""
+              required>
+          <div class="invalid-feedback">
+              Nombre inválido
+          </div>
+      </div>
+      <div class="mb-3">
+          <label for="telInput" class="form-label">Teléfono</label>
+          <input
+              oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+              type="tel" class="form-control" id="telInput" placeholder="555 123 4567" value=""
+              required minlength="10" maxlength="10" autocomplete="tel">
+          <div class="invalid-feedback">
+              Telefono inválido
+          </div>
+      </div>
+      <div class="mb-3">
+          <label for="emailInput" class="form-label">Email</label>
+          <input type="email" class="form-control" id="emailInput"
+              placeholder="correo@example.com" value="" required>
+          <div class="invalid-feedback">
+              Email inválido
+          </div>
+      </div>
+      <div class="mb-3">
+          <label for="asuntoInput" class="form-label">Asunto</label>
+          <input type="text" class="form-control" id="asuntoInput" placeholder="" value=""
+              required>
+          <div class="invalid-feedback">
+              Asunto inválido
+          </div>
+      </div>
+      <div class="mb-3">
+          <label for="msjArea" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="msjArea" rows="3" value="" required></textarea>
+          <div class="invalid-feedback">
+              Mensaje inválido
+          </div>
+      </div>
+
+      <div class="d-grid gap-2 col-6 mx-auto">
+          <!-- <input type="submit" class="btn btn-warning" id="btnEnviar"
+              style="margin: 2rem 0 2rem 0;" value="Enviar"> -->
+              <button type="button" class="btn btn-warning" id="btnEnviar"><i class="bi bi-send"></i> Enviar </button>
+      </div>
+
+      <script type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+      <script type="text/javascript">
+          emailjs.init("SoLWovVxSmmjDXkRB");
+      </script>
+  </form>
+</div>
+
+<!--footer-->
+
+</div>
+
+<!-- <ul>
+    <button type="button" class="Instagram-button">
+    <img src="./src/img/Instagram-Icon.png" alt="Instagram-Icon">
+    </button>
+    <button type="button" class="Github-button">
+      <img src="./src/img/GitHubIcon.png" alt="Github-Icon">
+      </button>
+    <button type="button" class="LinkedIn-button">
+      <img src="./src/img/LinkedIn.png" alt="LinkedIn-icon">
+    </button>
+    <button type="button" class="Facebook-button">
+      <img src="./src/img/FacebookIcon.png" alt="Facebook-Icon">
+    </button>
+  </ul> -->
+
+</body>
+</html>
