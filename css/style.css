@@ -82,7 +82,7 @@
 
 /* botones */
 
-/*body*/
+/*=========================================Body-Home============================================================*/
 *{
   box-sizing: border-box;
   padding: 0;               
@@ -105,59 +105,75 @@ html{
   border-radius: 10px;
   padding: 10px;
 }
-/*Navbar*/
+/* ============ Efecto Maquina de Escribir ==========*/
+span{
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 13ch;
+
+  animation: typing 2s steps(25),
+  blink .5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+
+  from{width: 0;}
+}
+
+@keyframes blink{
+  50%{border-color: transparent}
+}
+/* ============ Efecto Maquina de Escribir ==========*/
+/*======================================================Navbar===================================================*/
 .header{
   grid-area: header;
   animation-name: header;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
-}
+ /* background-color:green */
+ }
 .navbar{
   grid-area: navbar;
+ /* background-color: red; */
 }
 .sidebar{
   grid-area:sidebar;
   border: 2px solid greys;
+
   box-shadow: 0 0 white;
 }
 .main{
   grid-area: main;
+ /* background-color: rgb(0, 89, 255);*/
 
 }
 .footer{
   grid-area: footer;
   text-align: center;
-}
-.fotoPrincipal{
-  padding: 0;
-  border: 0;
-  margin: 0;
-  align-items: center;
+/*  background-color:blueviolet;*/
 }
 
-.container{
+/*.container{
   border: 2px solid gray;
   padding: 10px;
-  box-shadow: inset 0 0 10px white, 0 0 5px white;
-  border-radius: 45px;
+  box-shadow:  0 0 8px white;
   color:white;
-}
+} */
 .Titulo1{
   font-family:'Times New Roman';
   margin: 0;
-  text-shadow: 0 0 5px gray, 0 0 15px gray, 0 0 30px gray;
+  text-shadow: 0 0 5px white, 0 0 15px gray, 0 0 30px gray;
+  text-align: left;
 }
 .Titulo2{
   font-family:'Times New Roman';
   margin: 0;
   text-shadow: 0 0 5px gray, 0 0 15px gray, 0 0 30px gray;
-}
-
-.Titulo3{
-  font-family:'Times New Roman';
-  margin: 0;
-  text-shadow: 0 0 5px gray, 0 0 15px gray, 0 0 30px gray;
+  text-align: left;
 }
 
 .Parrafo1{
@@ -165,6 +181,7 @@ html{
   margin: 0;
   text-shadow: 0 0 5px yellow, 0 0 15px yellow, 0 0 30px yellow, 0 0 50px yellow;
   letter-spacing: 5px;
+  text-align: right;
 }
 
 .Parpadeante1{
@@ -184,13 +201,28 @@ html{
 }
 .fotoPrincipal{
   border: 2px solid gray;
-  padding: 10px;
-  box-shadow: inset 0 0 10px white, 0 0 5px white;
-  border-radius: 45px;
+  
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.329), 0 0 15px rgba(255, 255, 255, 0.678);
+  
   color:white;
 }
-/* Body */
-  /* modal */
+
+.text-body-secondary {
+  font-size: 10px;
+  color: white;
+}
+.botonesF{
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0);
+}
+.icons{
+  align-items: center;
+
+}
+/* =======================================================================================================*/
+  /*==========================================modal-home============================================================= */
   #Myname{
     color: black;
     font-size: 30px;
@@ -201,90 +233,125 @@ html{
   }
   .btnA{
 
-    display: inline-block; /* Esto permite aplicar márgenes */
-    font-size: 25px;
+    display: inline-block; 
+    font-size: 20px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0);
     border: 2px solid white;
-    color: black;
+    color: white;
     text-decoration: none;
     border-radius: 100px;
     font-family: 'Times New Roman';
     margin: 0;
-    box-shadow: inset 0 0 15px white, 0 0 15px white;
-    text-shadow: 0 0 5px gray, 0 0 15px gray;
+    box-shadow: 0 0 8px white;
+    
     }
-/** Cards*/
-.card{
-  text-align: center;
-  margin-left: 4%;
-  margin-bottom: 2%;
-  background-color: #2627299f;
+    .btnA:hover{
+      border: 2px solid black;
+      background-color: rgba(0, 0, 0, 0);
+      
+      }
+/*=========================================================BodyProyects========================================*/
+
+.card-text{
+  font-size: 20px;
+  font-family: 'Times New Roman';
+}
+.btnS{
+  display: inline-block; 
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid white;
   color: white;
-  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  border-radius: 100px;
+  font-family: 'Times New Roman';
+  margin: 0;
+  box-shadow: 0 0 8px white;
+}
+
+.btnS:hover{
+  border: 2px solid black;
+  background-color: rgba(0, 0, 0, 0);
   
+  }
+  .card{
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid gray;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.329), 0 0 15px rgba(255, 255, 255, 0.678);
+    
+  }
+/*================================================BodyContacto========================================================== */
+.contenedor{
+  background: linear-gradient(50deg, rgba(40,42,55,1),rgba(40,42,55,0,7)),
+  url(../src/img/bg.jpg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  width: 1000px;
+  border-radius: 25px;
+
+}
+.titulo{
+  font-family:'Times New Roman';
+  margin: 0;
+  font-size: 40px;
+  color: rgba(255, 255, 255, 0.486);
+  text-shadow: 0 0 5px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255), 0 0 30px rgb(255, 253, 253);
 }
 
-.card-img-top{
-  margin-top: 4%;
-  margin-left: 2%;
-  border-radius: 4%;
-  height: 300px;
-  width: 250px;
-}
-.cards{
-  position: absolute;
-  top: 30%;
-}
-/*======================================Contacto=============================================================== */
-
-
-
-
-.container {
-  margin-top: 2rem;
+form{
+  display:flex;
+  flex-direction: column;
+  width: 50%;
 }
 
-form,
-form label,
-.form-control,
-#btnEnviar {
-  font-size: 1.6rem;
+label{
+  font-size: 17px;
+  color: #959AAB;
+  margin-bottom: 10px;
 }
 
-label {
-  margin-left: 3rem;
+input, textarea{
+  display: inline-block; 
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.555);
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  font-family: 'Times New Roman';
+  margin: 0;
+  box-shadow: 0 0 8px white;
 }
 
-.form-control {
-  width: 90%;
-  margin: auto;
+.btn{
+  display: inline-block; 
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  border-radius: 100px;
+  font-family: 'Times New Roman';
+  margin: 0;
+  box-shadow: 0 0 8px white;
+}
+.btn:hover{
+  border: 2px solid black;
+  background-color: rgba(0, 0, 0, 0);
 }
 
-form {
-  padding-top: 5%;
-}
-
-#alertValidaciones,
-#alertValidacionesTexto,
-#alertValidacionesTexto strong {
-  font-size: 1.6rem;
-}
-
-.icon__warning {
-  font-size: 1.5rem;
-  margin-right: 1rem;
-}
-
-.icon__send {
-  margin: 0 1rem 0 auto;
-  font-size: 1.5rem;
-}
-
-.warning__text {
-  margin-left: auto;
-  font-size: 2rem;
-}
 
 
 
@@ -308,6 +375,8 @@ form {
   "footer"
   ;
 
+  
+
 }
 /**tablet**/
 @media (min-width:600px)
@@ -328,7 +397,25 @@ form {
     font-size: 40px;
     font-family: 'Times New Roman';
   }
-  
+  .card{
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    align-items: center;
+    font-size: 15px;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid gray;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.329), 0 0 15px rgba(255, 255, 255, 0.678);
+    
+  }
+
+  .form-content{
+    width: 100%;
+  }
+  .form{
+    width: 100%;
+  }
+
 }
 /**desktop**/
 @media (min-width:1000px){
@@ -361,11 +448,9 @@ form {
     padding: auto;
     background-color: aqua;
   }
-  .footer{
-    position:relative;
-    top: 100px;
-    right: 600px;
-  }
+
+  
+
 }
 /* keyframes */
 @keyframes header{

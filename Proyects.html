@@ -1,31 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portafolio Aristeo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
-  <!--navbar-->
+<body class="grid-container">
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-body-dark">
     <div class="container-fluid ">
-      <a class="navbar-brand btn-neon" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link  btn-neon" aria-current="page" href="./index.html">
-              <span id="span1"></span> <!--Este nav contiene los botones, la barra superior-->
+              <span id="span1"></span>
               <span id="span2"></span>
               <span id="span3"></span>
               <span id="span4"></span>
@@ -66,37 +64,72 @@
       </div>
     </div>
   </nav>
-  <!--Vertical Tex-->
+  <!-- Header -->
+  <header class="header">
+    <p class="textoV display-6">ENGINEER / JAVA DEVELOP JR.</p>
+  </header>
 
-  <!--cards-->
-  <div class="container-fluid cards">
-    <div class="row d-flex justify-content-center">
-      <div class="card" style="width: 18rem;">
-        <img src="./src/img/CentroComunitarioOficial.jpg" class="card-img-top" alt="CentroCentroComunitario">
-        <div class="card-body">
-          <h5 class="card-title"><strong>Vida Animal</strong></h5>
-          <p class="card-text">Vida Animal es un sitio web que se creo especificamente para un centro comunitario para perros y gatos en situacion de calle, este centro ofrece muchos otros servicios.</p>
-          <a href="#" class="btn btn-primary">Saber mas</a>
+  <!-- Contenido de las tarjetas -->
+  <main class="main ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./src/img/centroComunitario.jpg" class="card-img-top" alt="Proyecto 1" style="width: 272px; height: 220px;">
+            <div class="card-body">
+              <h5 class="card-title"><strong>Proyecto Centro Comunitario</strong></h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a href="https://github.com/FranciscoNunezAlonso/CentroComunitarioEquipo3.git" class="btn btn-primary btnS">Saber más</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="./src/img/AztecaMotors.PNG" class="card-img-top" alt="AztecaMotors">
-        <div class="card-body">
-          <h5 class="card-title"><Strong>AztecaMotors</Strong></h5>
-          <p class="card-text">AztecaMotors es un sitio web de venta de automóviles usados en donde cualquier persona puede poner su auto en venta.</p>
-          <a href="#" class="btn btn-primary">Saber mas</a>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./src/img/AztecaMotors.jpg" class="card-img-top" alt="Proyecto 2" style="width: 272px; height: 220px;" >
+            <div class="card-body">
+              <h5 class="card-title"><strong>Proyecto AztecaMotors</strong></h5>
+              <br>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a href="#" class="btn btn-primary btnS">Saber más</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="./src/img/Kotomitl.PNG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title"><strong>Kotomitl</strong></h5>
-          <p class="card-text">es un e-commerce que celebra la belleza y tradición de la ropa artesanal mexicana. Nuestra tienda ofrece una exquisita selección de prendas y accesorios con diseños auténticos y elaborados a mano por talentosos artesanos.</p>
-          <a href="#" class="btn btn-primary">Saber mas</a>
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="./src/img/Kotomitl.PNG" class="card-img-top" alt="Proyecto 3" style="width: 278px; height: 220px;" >
+            <div class="card-body">
+              <h5 class="card-title"><strong>Proyecto Kotomitl</strong></h5>
+              <br>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
+              <a href="https://robertomonzon.github.io/kotomitl/" class="btn btn-primary btnS">Saber más</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Contenido del Footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    <footer class="footer">
+      <div class="icons">
+        <hr>
+      <button class="botonesF"><img src="./src/img/Github.png" alt="" height="60px" width="60px"><button>
+      <button class="botonesF"><img src="./src/img/Instagram-Icon.png" alt="" height="50px" width="50px"><button>
+      <button class="botonesF"><img src="./src/img/LinkdIn.png" alt="" height="50px" width="50px"></button>
+      </div>
+    </footer>
+    
 </body>
 
 </html>

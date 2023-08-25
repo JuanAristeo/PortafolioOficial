@@ -16,9 +16,10 @@
     crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
   <!--Navbar-->
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-body-dark">
     <div class="container-fluid ">
-      <a class="navbar-brand btn-neon" href="#">Navbar</a>
+      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -27,7 +28,7 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link  btn-neon" aria-current="page" href="./index.html">
-              <span id="span1"></span> <!--Este nav contiene los botones, la barra superior-->
+              <span id="span1"></span>
               <span id="span2"></span>
               <span id="span3"></span>
               <span id="span4"></span>
@@ -68,88 +69,48 @@
       </div>
     </div>
   </nav>
-
+  
   <!--Formulario-->
+<div class="form-content contenedor">
+  <h2 class="titulo">Enviar un correo</h2>
 
-  <main class="container mb-5">
-    <section class="informacion__seccion text-center">
-      <!--=================== Formulario de contacto ===============-->
-      <div class="columna colForm">
-        <h1 style="text-align: center;">Cuéntanos sobre ti</h1>
+  <form action="https://formsubmit.co/cruzaristeojuanluis@gmail.com" method="POST" >
+    <label for="name">nombre</label>
+    <input type="text" name="name" id="name">
 
-        <form class="needs-validation" id="form" action="https://formsubmit.co/tester.anonimo.85@gmail.com"
-          method="POST">
+    <label for="email">correo electronico</label>
+    <input type="email" name="email" id="email">
 
-          <!-- Nombre -->
-          <div class="mb-5">
-            <div class="d-flex">
-              <label for="nombreInput" class="form-label">Nombre</label>
-              <div class="warning__text" style="display:none; color:rgb(186, 3, 3)" role="alert" id="alert_nombre">
-                <span><i class="bi bi-exclamation-triangle-fill icon__warning"></i></span>
-                <span id="alert_nombre_txt"></span>
-              </div>
-            </div>
-            <input type="text" class="form-control" id="nombreInput" placeholder="Ej. Michell Flores" required
-              minlength="3" maxlength="50" autocomplete="name" name="name">
-          </div>
+    <label for="subject">Asunto</label>
+    <input type="text" name="subject" id="subject">
 
-          <!-- Teléfono -->
-          <div class="mb-5">
-            <div class="d-flex">
-              <label for="telInput" class="form-label">Teléfono</label>
-              <div class="warning__text" style="display:none; color:rgb(186, 3, 3)" role="alert" id="alert_telefono">
-                <span><i class="bi bi-exclamation-triangle-fill icon__warning"></i></span>
-                <span id="alert_telefono_txt"></span>
-              </div>
-            </div>
-            <input oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" type="tel"
-              class="form-control" id="telInput" placeholder="10 dígitos" required minlength="10" maxlength="10"
-              autocomplete="tel" name="phone">
-          </div>
-          <!-- Email -->
-          <div class="mb-5">
-            <div class="d-flex">
-              <label for="emailInput" class="form-label">E-mail</label>
+    <label for="coments">Comentarios</label>
+    <textarea name="coments" id="coments" cols="30" rows="10"></textarea>
 
-              <div class="warning__text" style="display:none; color:rgb(186, 3, 3)" role="alert" id="alert_email">
-                <span><i class="bi bi-exclamation-triangle-fill icon__warning"></i></span>
-                <span id="alert_email_txt"></span>
-              </div>
-            </div>
-            <input type="email" class="form-control" id="emailInput" placeholder="Ej. correo@example.com" required
-              name="email">
-          </div>
-          <!-- Mensaje -->
-          <div class="mb-5">
-            <div class="d-flex">
-              <label for="msjArea" class="form-label">Mensaje</label>
-              <div class="warning__text" style="display:none; color:rgb(186, 3, 3)" role="alert" id="alert_mensaje">
-                <span><i class="bi bi-exclamation-triangle-fill icon__warning"></i></span>
-                <span id="alert_mensaje_txt"></span>
-              </div>
-            </div>
-            <textarea class="form-control" id="msjArea" rows="3" required name="message"
-              placeholder="Déjanos saber tus comentarios (min. 10 caracteres)"></textarea>
-          </div>
-          <!-- Botón de envío -->
-          <div class="d-grid gap-2 col-6 mx-auto">
-            <button type="button" class="btn btn-warning" id="btnEnviar" style="margin: 2rem 0 2rem 0;">
-              <span>
-                <i class="bi bi-send icon__send"></i>
-              </span>
-              Enviar mensaje </button>
-          </div>
+    <input class="btn" type="submit" value="Enviar">
 
-          <!-- deshabilitar propiedad de captcha y página por defecto de form submit   -->
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://robertomonzon.github.io/kotomitl/contacto">
+    <input type="hidden" name="_next" value="http://127.0.0.1:5501/Contact.html">
+    
+    <input type="hidden" name="_captcha" value="false">
+  </form>
 
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <!--footer-->
+</div>
+  <!--Formulario-->
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Contenido del Footer -->
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+      <footer class="footer">
+        <div class="icons">
+          <hr>
+        <button class="botonesF"><img src="./src/img/Github.png" alt="" height="60px" width="60px"><button>
+        <button class="botonesF"><img src="./src/img/Instagram-Icon.png" alt="" height="50px" width="50px"><button>
+        <button class="botonesF"><img src="./src/img/LinkdIn.png" alt="" height="50px" width="50px"></button>
+        </div>
+      </footer>
 
 </body>
 
