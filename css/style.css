@@ -14,7 +14,7 @@
     font-style: 'Times New Roman';
     color: white;
     padding: 15px ;
-    text-shadow: 0 0 5px gray, 0 0 15px gray, 0 0 30px gray;
+    
   }
   .btn-neon:hover{
     background: rgba(255, 255, 255, 0.432);
@@ -89,7 +89,7 @@
 }
 
 body{
-  background-image: url(../src/img/fondo-oscuro-abstracto-lineas-puntos-movimiento-conexion-red-visualizacion-renderizado-3d-big-data_710001-121.jpg);
+  background: linear-gradient(to bottom, #070E21, #133259);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -139,12 +139,20 @@ span{
 .navbar{
   grid-area: navbar;
  /* background-color: red; */
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.13);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
+
 .sidebar{
   grid-area:sidebar;
-  border: 2px solid greys;
-
-  box-shadow: 0 0 white;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.13);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 .main{
   grid-area: main;
@@ -170,7 +178,7 @@ span{
   text-align: left;
 }
 .Titulo2{
-  font-family:'Times New Roman';
+  font-family:monospace;
   margin: 0;
   text-shadow: 0 0 5px gray, 0 0 15px gray, 0 0 30px gray;
   text-align: left;
@@ -221,14 +229,24 @@ span{
   align-items: center;
 
 }
+
+footer a{
+  text-decoration: none;
+}
 /* =======================================================================================================*/
   /*==========================================modal-home============================================================= */
   #Myname{
     color: black;
     font-size: 30px;
   }
+  .modal-content{
+    background-color: #133259;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.548);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
   .modal-body{
-    color: black;
+    color: white;
     font-size: 20px;
   }
   .btnA{
